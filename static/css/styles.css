@@ -1,0 +1,105 @@
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    animation: show-content 1.5s linear forwards;
+    animation-delay: 1.2s;
+  }
+  .text-overlay {
+    transition: opacity 0.5s ease-in-out; /* Ajout de la transition */
+}
+.card {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    transition: transform 0.2s; /* Transition pour l'effet hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Légère élévation au survol */
+}
+
+.background-image {
+    background-image: url('imfond.jpeg'); /* Changez ce chemin si nécessaire */
+    background-size: cover;
+    background-size: 200px 200px; /* Largeur de 100px et hauteur de 200px */
+    background-size: 60%; /* Largeur et hauteur à 50% de l'élément */
+    background-position: center;
+    min-height: 100vh; /* Utilise min-height pour une meilleure adaptation */
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.text-overlay {
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Optionnel : fond semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/* Optionnel : Fond noir pour l'ensemble de la page */
+
+.header {
+    display: flex;
+    flex-direction: column; /* Aligne le texte verticalement */
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    height: 100vh; /* Hauteur de l'écran */
+    background-color:  #f5f5dc; /* Beige */; /* Fond léger pour le header */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Couleur de fond */
+    border: none; /* Supprime la bordure */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement interne */
+    font-size: 16px; /* Taille de la police */
+    border-radius: 5px; /* Coins arrondis */
+    text-decoration: none; /* Supprime le soulignement */
+    transition: background-color 0.3s ease; /* Animation au survol */
+}
+.btn-primary:hover {
+    background-color: #0056b3; /* Couleur au survol */
+    cursor: pointer; /* Change le curseur */
+}
+form {
+    max-width: 400px; /* Limite la largeur du formulaire */
+    margin: auto; /* Centre le formulaire horizontalement */
+    color: black;
+}
+.footer .container {
+    background-color: dark;
+}
+.bg-light-gray {
+    background-color: #d3d3d3; /* Gris clair */
+}
+
+
+.footer p {
+    margin: 0; /* Pas de marge par défaut */
+}
+
+
+.social-icons {
+    font-size: 1.5rem; /* Ajuste la taille selon tes préférences */
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center; /* Centre les éléments verticalement */
+    margin-top: 30px; /* Espace au-dessus des icônes (ajustez selon vos besoins) */
+}
+.articles-container {
+    padding: 20px; /* Ajustez selon vos besoins */
+}
+
+

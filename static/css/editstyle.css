@@ -1,0 +1,95 @@
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    animation: show-content 1.5s linear forwards;
+    animation-delay: 1.2s;
+  }
+
+
+
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Couleur de fond douce */
+    color: #343a40; /* Couleur du texte */
+}
+
+/* En-tête */
+.header {
+    display: flex;
+    flex-direction: column; /* Aligne le texte verticalement */
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    height: 100vh; /* Hauteur de l'écran */
+    background-color:  #f5f5dc; /* Beige */; /* Fond léger pour le header */
+}
+
+/* Navigation */
+.nav-link {
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    text-decoration: underline; /* Souligner au survol */
+}
+
+/* Titre */
+h1 {
+    font-size: 2rem; /* Taille de la police du titre */
+    color: #007bff; /* Couleur personnalisée pour le titre */
+}
+
+/* Formulaire */
+.custom-form {
+    background-color: #ffffff; /* Fond du formulaire */
+    border: 1px solid #ced4da; /* Bordure grise */
+    border-radius: 0.5rem; /* Coins arrondis */
+    padding: 2rem; /* Rembourrage interne */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+/* Boutons */
+.btn {
+    width: 48%; /* Largeur des boutons */
+    padding: 0.75rem; /* Rembourrage */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Couleur du bouton primaire */
+    border-color: #007bff; /* Couleur de la bordure */
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Couleur du bouton secondaire */
+    border-color: #6c757d; /* Couleur de la bordure */
+}
+
+/* Espacement */
+.mt-5 {
+    margin-top: 3rem; /* Espacement supérieur */
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem; /* Espacement inférieur */
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; /* Réduire la taille du titre sur mobile */
+    }
+    
+    .btn {
+        width: 100%; /* Boutons en pleine largeur sur mobile */
+        margin-bottom: 1rem; /* Espace entre les boutons */
+    }
+}
