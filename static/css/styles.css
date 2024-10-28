@@ -26,17 +26,12 @@
 }
 
 .background-image {
-    background-image: url('imfond.jpeg'); /* Changez ce chemin si nécessaire */
-    background-size: cover;
-    background-size: 200px 200px; /* Largeur de 100px et hauteur de 200px */
-    background-size: 60%; /* Largeur et hauteur à 50% de l'élément */
+    background-color: lightblue; /* Fond de secours */
+    background-image: url('n.webp');
+    background-size: cover; 
     background-position: center;
-    min-height: 100vh; /* Utilise min-height pour une meilleure adaptation */
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    height: 100vh; 
+    width: 100%; 
 }
 
 .text-overlay {
