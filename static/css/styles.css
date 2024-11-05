@@ -13,6 +13,10 @@
     animation: show-content 1.5s linear forwards;
     animation-delay: 1.2s;
   }
+  body {
+    background: #99add1;
+  
+  }
   .text-overlay {
     transition: opacity 0.5s ease-in-out; /* Ajout de la transition */
 }
@@ -24,15 +28,44 @@
 .card:hover {
     transform: translateY(-5px); /* Légère élévation au survol */
 }
+/*.container {
+    color: #007bff;
+}*/
 
-.background-image {
-    background-color: lightblue; /* Fond de secours */
-    background-image: url('n.webp');
-    background-size: cover; 
-    background-position: center;
-    height: 100vh; 
-    width: 100%; 
+.background {
+    /*background-color: lightblue;  Fond de secours */
+    width: 100%; /* Utilisez width au lieu de min-width */
+    height: 100vh; /* Assurez-vous que le conteneur a une hauteur */
+     /*min-width: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Ajouté pour le positionnement */
+     /*overflow: hidden; Pour éviter le débordement */
 }
+.background::before {
+    content: '';
+    background-image: url('nutrition.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /*couvre tout l'élément*/
+    background-position: center; /*centre l'image*/
+    position: absolute; /*Positionnement absolu pour superposer*/
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.35;
+    
+}
+h1 {
+    font-size: 70px;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    color: white; /* Changez la couleur si nécessaire pour qu'elle soit visible */
+    margin: 0; /* Enlevez les marges par défaut */
+}
+
 
 .text-overlay {
     color: white;
@@ -76,8 +109,8 @@ form {
 .footer .container {
     background-color: dark;
 }
-.bg-light-gray {
-    background-color: #d3d3d3; /* Gris clair */
+.bg-light-black {
+    background-color: #1f1d1d; /* Gris clair */
 }
 
 
@@ -96,5 +129,4 @@ form {
 .articles-container {
     padding: 20px; /* Ajustez selon vos besoins */
 }
-
 
